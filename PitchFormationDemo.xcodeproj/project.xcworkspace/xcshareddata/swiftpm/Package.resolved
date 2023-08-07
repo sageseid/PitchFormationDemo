@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "pitchformation",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sageseid/PitchFormation.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "afdd18399a06a9e3fb0b369168842a054cc90758"
+      }
+    }
+  ],
+  "version" : 2
+}

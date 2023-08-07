@@ -11,6 +11,7 @@
 		4E5EE3E22A8128D700099BBD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5EE3E12A8128D700099BBD /* ContentView.swift */; };
 		4E5EE3E42A8128DA00099BBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E5EE3E32A8128DA00099BBD /* Assets.xcassets */; };
 		4E5EE3E72A8128DA00099BBD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E5EE3E62A8128DA00099BBD /* Preview Assets.xcassets */; };
+		4E5EE3EF2A812B3F00099BBD /* PitchFormation in Frameworks */ = {isa = PBXBuildFile; productRef = 4E5EE3EE2A812B3F00099BBD /* PitchFormation */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E5EE3EF2A812B3F00099BBD /* PitchFormation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = PitchFormationDemo;
+			packageProductDependencies = (
+				4E5EE3EE2A812B3F00099BBD /* PitchFormation */,
+			);
 			productName = PitchFormationDemo;
 			productReference = 4E5EE3DC2A8128D700099BBD /* PitchFormationDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 4E5EE3D32A8128D700099BBD;
+			packageReferences = (
+				4E5EE3ED2A812B3F00099BBD /* XCRemoteSwiftPackageReference "PitchFormation" */,
+			);
 			productRefGroup = 4E5EE3DD2A8128D700099BBD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -339,6 +347,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4E5EE3ED2A812B3F00099BBD /* XCRemoteSwiftPackageReference "PitchFormation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sageseid/PitchFormation.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4E5EE3EE2A812B3F00099BBD /* PitchFormation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4E5EE3ED2A812B3F00099BBD /* XCRemoteSwiftPackageReference "PitchFormation" */;
+			productName = PitchFormation;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4E5EE3D42A8128D700099BBD /* Project object */;
 }

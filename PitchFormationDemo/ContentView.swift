@@ -6,16 +6,14 @@
 //
 
 import SwiftUI
+import PitchFormation
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+  Formation(formation:  [["DefaultGK"],
+                ["DefaultDF", "DefaultDF", "DefaultDF", "DefaultDF"],
+                ["DefaultMF", "DefaultMF", "DefaultMF"],
+                ["DefaultST", "DefaultST", "DefaultST"]], numbers: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"], jerseyNumberColor: .black, jerseyColor: .red, side: .home, vSpacing: 40, hSpacing: 20, width: 80, height: 80)
     }
 }
 
